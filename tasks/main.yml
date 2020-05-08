@@ -6,6 +6,6 @@
 
 - name: Download binary 
   get_url:
-    url: {{ base_url }}/{{ bin_version }}/bin/{{ ansible_os_family|lower }}/{{ cpu_type}}/kubectl
-    dest: {{ bin_dir }}/kubectl 
+    url: "{{ base_url }}/{{ bin_version }}/bin/{{ ansible_os_family|lower }}/{{ cpu_type}}/kubectl"
+    dest: "{{ bin_dir }}/kubectl" 
     mode: '0755'
